@@ -1,28 +1,29 @@
 import { Image, StyleSheet, Platform } from 'react-native';
 import { ExpoRadialChartView } from '../../modules/expo-radial-chart';
+import CameraComponent from '@/components/Camera';
 
 export default function HomeScreen() {
   return (
 
-    <ExpoRadialChartView
-      style={styles.container}
-      data={[
-        {
-          color: '#ff0000',
-          percentage: 0.5,
-        },
-        {
-          color: '#00ff00',
-          percentage: 0.2,
-        },
-        {
-          color: '#0000ff',
-          percentage: 0.3,
-        },
-      ]}
-    />
+    // <ExpoRadialChartView
+    //   style={styles.container}
+    //   data={[
+    //     {
+    //       color: '#ff0000',
+    //       percentage: 0.5,
+    //     },
+    //     {
+    //       color: '#00ff00',
+    //       percentage: 0.2,
+    //     },
+    //     {
+    //       color: '#0000ff',
+    //       percentage: 0.3,
+    //     },
+    //   ]}
+    // />
 
-
+    <CameraComponent></CameraComponent>
   );
 }
 
